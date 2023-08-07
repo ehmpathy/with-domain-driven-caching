@@ -17,7 +17,7 @@ import { SimpleCache } from 'with-simple-caching';
  * usecase
  * - accessing outputs .set by a lambda server, at the lambda client (e.g., with [simple-lambda-client](https://github.com/ehmpathy/simple-lambda-client))
  */
-export const withDomainDrivenGets = (
+export const withDomainDrivenGets = <T extends SerializableObject>(
   cache: SimpleCache<string>,
-): SimpleCache<SerializableObject> =>
-  withoutSet(withDenormalization(withSerialization<SerializableObject>(cache)));
+): SimpleCache<T> =>
+  withoutSet(withDenormalization(withSerialization<T>(cache)));
