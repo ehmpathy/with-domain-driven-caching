@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/ehmpathy/with-domain-driven-caching/compare/v1.1.1...v1.1.2) (2023-08-07)
+
+
+### Bug Fixes
+
+* **deps:** bump domain-objects to remove excessive length cache key bug ([3338085](https://github.com/ehmpathy/with-domain-driven-caching/commit/3338085cab2aadf4b222ab41cea2bff58a48f488))
+
 ## [1.1.1](https://github.com/ehmpathy/with-domain-driven-caching/compare/v1.1.0...v1.1.1) (2023-08-07)
 
 
