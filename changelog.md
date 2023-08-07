@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2023-08-07)
+
+
+### Features
+
+* **init:** initialize based on with-simple-caching ([3d32138](https://github.com/ehmpathy/with-domain-driven-caching/commit/3d32138a53a8a665148a8a98a8793ea7db5e1e6e))
+
 ## [0.11.3](https://github.com/ehmpathy/with-simple-caching/compare/v0.11.2...v0.11.3) (2023-07-28)
 
 
