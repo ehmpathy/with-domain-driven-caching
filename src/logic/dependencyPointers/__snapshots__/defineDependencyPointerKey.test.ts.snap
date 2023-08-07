@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`defineDependencyPointerKey should be able to define the dependency pointer key for a relationship from entity with foreign key on *source* entity 1`] = `".query.dep.Container.uuid.__uuid__.onShipUuid"`;
+
+exports[`defineDependencyPointerKey should be able to define the dependency pointer key for a relationship from entity with foreign key on *target* entity 1`] = `".query.dep.Container.onShipUuid.__uuid__.c72319fa41f2824995e59ec2f82e14eda8a5a017cdc6f9b971a02e205d306813"`;
+
+exports[`defineDependencyPointerKey should be able to define the dependency pointer key to a domain value object property 1`] = `".query.dep.Container.lock.ContainerLock.swipernoswiping.lockymclockface.3cf448f9380ecd4daf668110f1f0bf7884de32b69c3576082bf0dcc1ca50c2b9"`;
