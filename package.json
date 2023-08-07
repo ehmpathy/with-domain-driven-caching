@@ -61,7 +61,7 @@
     "simple-lambda-client": "^2.3.0",
     "type-fns": "0.8.1",
     "uuid": "9.0.0",
-    "with-cache-normalization": "^1.0.0",
+    "with-cache-normalization": "^1.0.2",
     "with-simple-caching": "^0.11.3"
   },
   "devDependencies": {
