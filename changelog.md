@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/ehmpathy/with-domain-driven-caching/compare/v1.1.0...v1.1.1) (2023-08-07)
+
+
+### Bug Fixes
+
+* **deps:** bump with-cache-normalization to resolve denorm bug ([fe6f1d2](https://github.com/ehmpathy/with-domain-driven-caching/commit/fe6f1d2e7b2f96580fbd5877d29243cf85c69f2b))
+* **types:** make withDomainDrivenGets generic ([95b6e54](https://github.com/ehmpathy/with-domain-driven-caching/commit/95b6e547d08e289607197c3ab7f4d0ea0c136c0a))
+
 ## [1.1.0](https://github.com/ehmpathy/with-domain-driven-caching/compare/v1.0.0...v1.1.0) (2023-08-07)
 
 
