@@ -1,9 +1,8 @@
+import { UnexpectedCodePathError } from '@ehmpathy/error-fns';
 import Bottleneck from 'bottleneck';
 import { createCache } from 'simple-in-memory-cache';
 import { SerializableObject } from 'with-cache-normalization/dist/domain/NormalizeCacheValueMethod';
 import { SimpleAsyncCache, withSimpleCaching } from 'with-simple-caching';
-
-import { UnexpectedCodePathError } from '../../utils/errors/UnexpectedCodePathError';
 
 export const isValidPointerState = (
   state: SerializableObject,

@@ -1,9 +1,9 @@
+import { UnexpectedCodePathError } from '@ehmpathy/error-fns';
 import { isPropertyNameAReferenceIntuitively } from 'domain-objects';
 import { isAFunction } from 'type-fns';
 
 import { DomainDrivenQueryDependency } from '../../domain/DomainDrivenQueryDependency';
 import { DomainDrivenQueryDependsOn } from '../../domain/DomainDrivenQueryDependsOn';
-import { UnexpectedCodePathError } from '../../utils/errors/UnexpectedCodePathError';
 import { defineDependencyPointerKey } from './defineDependencyPointerKey';
 
 export class DependencyRelationshipViaUnintuitivePropertyNameError extends Error {
