@@ -1,4 +1,4 @@
-import { DomainEntity, DomainValueObject } from 'domain-objects';
+import { DomainEntity, DomainLiteral } from 'domain-objects';
 import { getSimpleLambdaClientCacheKey } from 'simple-lambda-client';
 import { createCache } from 'simple-on-disk-cache';
 import {
@@ -25,7 +25,7 @@ interface ContainerLock {
   model: string;
 }
 class ContainerLock
-  extends DomainValueObject<ContainerLock>
+  extends DomainLiteral<ContainerLock>
   implements ContainerLock {}
 
 interface Container {

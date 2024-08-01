@@ -42,6 +42,9 @@ export const withQueryCaching = <I extends any[], O extends SerializableObject>(
      * for example
      * - a query called `getPaymentByUuid({ uuid }) => Payment | null` will likely have a dependency on `{ identity: { dobj: Payment, uuid: ({ input }) => input[0].uuid } }`
      * - a query called `getLastPaymentOfUser({ userUuid }) => Payment` will likely have a dependency on `{ relationship: { from: { dobj: User, uuid: ({ input }) => input[0].uuid }, to: { dobj: Payment }, via: { dobj: Payment, prop: 'userUuid' } }`
+     *
+     * tips
+     * - you can see the dependency pointers your query will be invalidated by, by searching for logs with the message `ddcache.query.set`. if `logDebug` is set, this log will be emitted each time your query is set to the cache
      */
     dependsOn: DomainDrivenQueryDependsOn<I, O>;
 

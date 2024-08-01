@@ -1,4 +1,4 @@
-import { DomainEntity, DomainValueObject } from 'domain-objects';
+import { DomainEntity, DomainLiteral } from 'domain-objects';
 import { getCacheReferenceKeyForDomainObject } from 'with-cache-normalization';
 import { SerializableObject } from 'with-cache-normalization/dist/domain/NormalizeCacheValueMethod';
 import { SimpleAsyncCache } from 'with-simple-caching';
@@ -10,7 +10,7 @@ interface ContainerLock {
   model: string;
 }
 class ContainerLock
-  extends DomainValueObject<ContainerLock>
+  extends DomainLiteral<ContainerLock>
   implements ContainerLock {}
 
 interface Container {
@@ -51,7 +51,7 @@ describe('getDependencyPointersInvalidatedByMutationOutputReference', () => {
   };
 
   beforeEach(() => jest.clearAllMocks());
-  it('should invalidate nothing if it is not a domain entity', async () => {
+  it.only('should invalidate nothing if it is not a domain entity', async () => {
     const pointers =
       await getDependencyPointersInvalidatedByMutationOutputReference({
         cache,

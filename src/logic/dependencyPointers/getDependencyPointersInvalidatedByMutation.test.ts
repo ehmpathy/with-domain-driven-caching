@@ -1,4 +1,4 @@
-import { DomainEntity, DomainValueObject } from 'domain-objects';
+import { DomainEntity, DomainLiteral } from 'domain-objects';
 import { SerializableObject } from 'with-cache-normalization/dist/domain/NormalizeCacheValueMethod';
 import { SimpleAsyncCache } from 'with-simple-caching';
 
@@ -18,7 +18,7 @@ interface ContainerLock {
   model: string;
 }
 class ContainerLock
-  extends DomainValueObject<ContainerLock>
+  extends DomainLiteral<ContainerLock>
   implements ContainerLock {}
 
 interface Container {

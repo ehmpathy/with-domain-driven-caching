@@ -1,7 +1,7 @@
 import { sha256 } from 'cross-sha256';
 import {
   DomainEntity,
-  DomainValueObject,
+  DomainLiteral,
   getUniqueIdentifierSlug,
 } from 'domain-objects';
 import { PickOne } from 'type-fns';
@@ -10,7 +10,7 @@ import { SerializableObject } from 'with-cache-normalization/dist/domain/Normali
 const serializePropertyValue = (value: SerializableObject) => {
   // if it is a domain object, get its unique identifier
   const isDomainIdentifiable =
-    value instanceof DomainEntity || value instanceof DomainValueObject;
+    value instanceof DomainEntity || value instanceof DomainLiteral;
   if (isDomainIdentifiable) return getUniqueIdentifierSlug(value);
 
   // otherwise, must use JSON.stringify, to avoid getting things like `[ Object: object ]`; however, must be filePathSafe, so cross-sha hash and include human part

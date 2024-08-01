@@ -1,4 +1,4 @@
-import { DomainEntity, DomainValueObject } from 'domain-objects';
+import { DomainEntity, DomainLiteral } from 'domain-objects';
 
 import { defineDependencyPointerKey } from './defineDependencyPointerKey';
 
@@ -7,7 +7,7 @@ interface ContainerLock {
   model: string;
 }
 class ContainerLock
-  extends DomainValueObject<ContainerLock>
+  extends DomainLiteral<ContainerLock>
   implements ContainerLock {}
 
 interface Container {
