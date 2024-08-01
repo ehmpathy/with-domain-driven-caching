@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.3](https://github.com/ehmpathy/with-domain-driven-caching/compare/v1.1.2...v1.1.3) (2024-08-01)
+
+
+### Bug Fixes
+
+* **deps:** bump domain-objects for literal ([f85508b](https://github.com/ehmpathy/with-domain-driven-caching/commit/f85508b9c1a969a7d9a7cffd1bd631effe214cd6))
+* **practs:** bump practs to latest best ([5b94524](https://github.com/ehmpathy/with-domain-driven-caching/commit/5b945246887e1cf01936c562ec060d505f5a4442))
+
 ## [1.1.2](https://github.com/ehmpathy/with-domain-driven-caching/compare/v1.1.1...v1.1.2) (2023-08-07)
 
 
